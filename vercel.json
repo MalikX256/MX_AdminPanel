@@ -1,0 +1,14 @@
+{
+  "buildCommand": "cd backend && npm install",
+  "outputDirectory": "backend",
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "JWT_SECRET": "@jwt_secret"
+  },
+  "functions": {
+    "backend/api.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}
